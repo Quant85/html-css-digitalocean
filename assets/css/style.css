@@ -2,6 +2,21 @@
 
 /* font import */
 
+/* debug */
+.card_signup{
+  height: 520px;
+}
+
+#site_section {
+  height: 300px;
+  padding: 3rem 1.5rem;
+}
+.site_section:nth-child(even) {
+  background-color:#ffff
+}
+
+
+
 /* Class utility */
 
 /* Color ad Typografhy */
@@ -30,6 +45,14 @@
   padding-top: 8px;
   padding-bottom: 8px;
 }
+.py_20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.py_64 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
 
 .mr_15 {
   margin-right: 15px;
@@ -37,6 +60,7 @@
 
 body {
   font-family: 'Sailec-Medium', 'Helvetica', 'sans-serif';
+  background-color: rgb(243, 245, 249);
 }
 
 p {
@@ -54,6 +78,7 @@ p {
 #nav_top,
 #nav_menu {
   background-color: white;
+  border-radius: 0;
   z-index: 30;
 }
 .navbar {
@@ -178,14 +203,14 @@ p {
 }
 
 .jumbotron>.container {
-      max-width: 1170px;
+  max-width: 1170px;
 }
 
 .jumbotron img {
   height: 100%;
 }
 
-.jumbotron>.container {
+.jumbotron>.box_text {
   max-width: 670px;
 }
 .jumbotron h1{
@@ -196,13 +221,37 @@ p {
   letter-spacing: -1px;
   margin-bottom: 0;
 }
+
+.jumbotron p {
+  font-family: 'Sailec-Light';
+  font-size: 24px;
+  line-height: 150%;
+  margin-top: 20px;
+}
+
 /************
 *   MAIN    *
 *************/
 
 /* -- /#sito_main -- */
-#site_section {
-  height: 400px;
+#businesses_soluction img {
+  margin: auto;
+}
+#businesses_soluction a {
+  display: inline-block;
+}
+
+#planning {
+  align-items: center;
+  padding: 32px;
+  max-width: 940px;
+  border: 1px solid #e5e8ed;
+  box-shadow: 0px 2px 4px rgba(1, 14, 40, 0.05);
+  margin: 0 auto;
+}
+#planning img {
+  max-height: 80px;
+  margin: auto;
 }
 
 
@@ -213,26 +262,21 @@ p {
 /* Media Query */
 
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   
   .navbar {
   min-height: 3.25rem;
   }
-}
+} */
 
 
 @media screen and (max-width:1100px) {
+
   #nav_top {
     display: none;
   }
 
-  .navbar-brand.desk_xs {
-    display: block;
-  }
-
-  .navbar-brand.desk_md {
-    display: none;
-  }
+  
 
   #nav_menu_collapse {
     display: none !important;
@@ -246,10 +290,34 @@ p {
     display: block;
   }
 
+  .navbar-fixed-top {
+    position: relative;
+  }
+
   /* jumbotron */
   .jumbotron {
-    margin-top: 67px;
+    margin-top: 0px;
   }
+
+}
+
+@media (max-width: 768px) {
+  
+  .navbar-brand.desk_xs {
+    display: block;
+  }
+
+  .navbar-brand.desk_md {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:1024px) {
+  .container {
+    max-width: 960px;
+  }
+
 
 }
 
