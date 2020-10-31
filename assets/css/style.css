@@ -467,10 +467,11 @@ input[type="radio"] {
 
 #box_infotest>li {
   margin: 0;
-  line-height: 40px;
+  padding: 10px 15px;
+/*   line-height: 40px; */
 }
 
-#box_infotest>li span,
+#box_infotest>li span:first-of-type,
 #box_infotest>li a {
   padding: 0;
 }
@@ -482,6 +483,10 @@ input[type="radio"] {
 }
 
 #box_infotest span:last-of-type {
+  font-size: 13px;
+  font-family: "Sailec";
+  font-weight: 400;
+  font-style: normal;
   color: #fff;
   opacity: 0.6;
   text-transform: capitalize;
