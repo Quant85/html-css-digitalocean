@@ -174,28 +174,27 @@
       </section>
       <!-- /#site_section -->
       <section id="service_solution" class="site_section py_64">
-        <div class="container">
-          <div id="planning" class="row">
-            <div class="col-md-12 text-center">
-
-              <div class="col-xs-12 col-sm-3 col-md-3 text-center">
-                <img src="./assets/img/main/planning/planning.png" class="img-responsive" alt="Image">
-              </div>          
-              <div class="col-xs-12 col-sm-6 col-md-6">
-                <h3>Planning to create static sites?</h3>
-                <span>You can now build and deploy 3 static sites for free. </span>
-              </div>
-              <!-- /.col-md-5 -->
-              <div class="col-xs-12 col-sm-2 col-md-2">
-                <button type="button" class="btn btn-primary">Learn more</button>
-              </div>
-              <!-- /.col-md-4 -->              
+        <div id="planning" class="clearfix">
+          <div class="col-md-12 text-center">
+            <div class="col-xs-12 col-sm-3 col-md-3 text-center">
+              <img src="./assets/img/main/planning/planning.png" class="img-responsive" alt="Image">
+            </div>          
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <h3>Planning to create static sites?</h3>
+              <span>You can now build and deploy 3 static sites for free. </span>
             </div>
-            <!-- /.col-md-12 -->
+            <!-- /.col-md-5 -->
+            <div class="col-xs-12 col-sm-2 col-md-2">
+              <button type="button" class="btn btn-primary">Learn more</button>
+            </div>
+            <!-- /.col-md-4 -->              
           </div>
+          <!-- /.col-md-12 -->
+        </div>
+        <div class="container">
           <!-- /.row -->
 
-          <div class="row py_120_70">
+          <div id="deploy_row" class="row py_120_70">
             <!-- #deploy -->
             <div id="deploy" class="col-md-12 text-center">
               <h2 class="darkblue">
@@ -280,10 +279,12 @@
                 build more and spend less time managing your infrastructure with our easy-to-use control panel and API.
               </p>
               <div class="row text-center  mt_64">
+
                 <div class="swipe col-md-1 col-lg-1 text-center">
                   <img src="./assets/img/main/designed/arrow.svg" class="arrow img-responsive" alt="Image">
                 </div>
                 <!-- /.arrow col-lg-2 --> 
+
                 <div class="scroll_box col-md-10 col-lg-10">
                   <div id="two" class="slide_img">
                     <img src="./assets/img/main/designed/kubernetes.webp" class="img-responsive " alt="Image">
@@ -328,10 +329,10 @@
         <div class="container">
           <h2 class="text-center">built for business</h2>
           <div class="row mt_64">
-            <div class="card col-xs-12 col-sm-12 col-md-3 pr_64">
+            <div class="card col-xs-12 col-sm-12 col-md-3 px_0_64">
               <img src="./assets/img/main//build/icon-check-shield.svg" class="img-responsive" alt="Image">
               <h5 class="text-capitalizze">reliable platform</h5>
-              <p class="m_10_0">
+              <p>
                 more than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99%
                 uptime SLA for all services.
               </p>
@@ -339,11 +340,11 @@
               <a class="text-capitalize line_link" href="#">security</a>
             </div>
             <!-- /.col-xs-12 col-sm-12 col-md-3 -->
-            <div class="card col-xs-12 col-sm-12 col-md-3">
-              <img src="./assets/img/main//build/icon-check-shield.svg"
+            <div class="card col-xs-12 col-sm-12 col-md-3 px_0_64">
+              <img src="./assets/img/main//build/icon-task-list-multiple.svg"
                 class="img-responsive" alt="Image">
               <h5 class="text-capitalizze">Predictable pricing</h5>
-              <p class="m_10_0">
+              <p>
                 Leave complex pricing structures behind. Always know what you’ll pay per month with a flat,
                 industry-leading pricing structure.
               </p>
@@ -351,10 +352,10 @@
               <a class="text-capitalize line_link" href="#">Pricing</a>
             </div>
             <!-- /.col-xs-12 col-sm-12 col-md-3 -->
-            <div class="card col-xs-12 col-sm-12 col-md-3">
+            <div class="card col-xs-12 col-sm-12 col-md-3 px_0_64">
               <img src="./assets/img/main//build/icon-headphones-customer-support-human.svg" class="img-responsive" alt="Image">
               <h5 class="text-capitalizze">world-class service</h5>
-              <p class="m_10_0">
+              <p>
                 Free around-the-clock technical support for all customers, with additional benefits for premium support
                 subscribers. You’ll feel the love..
               </p>
@@ -365,7 +366,7 @@
             <div class="card col-xs-12 col-sm-12 col-md-3">
               <img src="./assets/img/main//build/icon-certified-certificate.svg" class="img-responsive" alt="Image">
               <h5 class="text-capitalizze">security and compliance</h5>
-              <p class="m_10_0">
+              <p>
                 keep your data protected. Our platform is certified on multiple international standards, including SOC 1
                 Type II, SOC 2 Type II, ISO/IEC 27001, and PCI-DSS.
               </p>
@@ -379,7 +380,60 @@
         <!-- /.container -->
       </section>
       <!-- /#site_section -->
-      <section id="site_section" class="site_section"></section>
+      <section id="customers_service" class="site_section">
+        
+        <div id="box_info_customers" class="container">
+          <h2 class="white text-center">
+            service your customers around the world from 13 data centers.
+          </h2>
+          <p class="white text-center">
+            run your infrastructure near your customers. Industry-low
+            <a class="text_link" href="#">bandwidth pricing</a>
+            , with generous quotas and add-on transfer at just $.01/GiB, makes DigitalOcean perfect for
+            network-heavy
+            apps like VPN and video.
+          </p>
+          <div class="row mt_64">
+            <ul id="box_infotest" class="col-sm-12 col-md-12 col-lg-12">
+              <li class="row col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <span class="col-xs-2 col-sm-2 col-md-2 col-lg-2">ams2</span>
+                <!-- /.col-lg-1 -->
+                <span class="col-xs-7 col-sm-7 col-md-6 col-lg-7">amsterdam, netherlands</span>
+                <!-- /.col-lg-9 -->
+                <a href="" class="line_link col-xs-3 col-sm-3 col-md-4 col-lg-3 pull-right">test speed</a>
+                <!-- /.line_link col-lg-2 -->
+
+              </li>
+              <li class="row col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <span class=" col-md-2 col-lg-2">ams3</span>
+                <!-- /.col-lg-1 -->
+                <span class="col-md-6 col-lg-7">amsterdam, netherlands</span>
+                <!-- /.col-lg-9 -->
+                <a href="" class="line_link col-md-4 col-lg-3 pull-right">test speed</a>
+                <!-- /.line_link col-lg-2 -->
+              </li>
+              <li class="row col-md-6 col-lg-6">
+                <span class="col-lg-2">ams2</span>
+                <!-- /.col-lg-1 -->
+                <span class="col-lg-7"></span>
+                <!-- /.col-lg-9 -->
+                <a href="" class="line_link col-lg-3 pull-right">test speed</a>
+                <!-- /.line_link col-lg-2 -->
+              </li>
+              <li class="row col-md-6 col-lg-6">
+                <span class="col-lg-1">ams2</span>
+                <!-- /.col-lg-1 -->
+                <span class="col-lg-9"></span>
+                <!-- /.col-lg-9 -->
+                <a href="" class="line_link col-lg-2 pull-right">test speed</a>
+                <!-- /.line_link col-lg-2 -->
+              </li>
+            </ul>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
       <!-- /#site_section -->
       <section id="site_section" class="site_section"></section>
       <!-- /#site_section -->
