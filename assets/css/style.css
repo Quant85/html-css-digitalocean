@@ -697,8 +697,104 @@ input[type="radio"] {
 #sito_footer .footer_social {
   display:none;
 }
+
+#sito_footer .footer_social {
+  border-top: 1px solid hsla(0, 0%, 100%, 0.2);
+  padding-top: 20px;
+}
 /* special lg style */
- 
+
+/* help_bot */
+
+.help_bot_box {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+
+.out {
+  background: #ffff;
+  border: solid 1px #031b4e;
+}
+.out:before {
+  border-color: transparent #031b4e;
+}
+
+.out:after {
+  border-color: transparent #ffffff;
+}
+
+.bubble {
+  min-height: 60px;
+  width: 300px;
+  color: hsl(220, 95%, 8%);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4em;
+  padding: 15px 20px 15px 12px;
+  border-radius: .4em;
+  position: relative;
+  top: 0;
+  left: -10px;
+  transform: translate(-1%, 10%);
+  display: inline-block;
+  z-index: 15;
+}
+
+
+.bubble:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -10px;
+  border-style: solid;
+  border-width: 8px 0px 8px 10px;
+  display: inline-block;
+  width: 0;
+  z-index: 11;
+
+}
+.bubble:after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -8px;
+  border-style: solid;
+  border-width: 8px 0px 8px 10px;
+  display: inline-block;
+  width: 0;
+  z-index: 12;
+}
+
+
+#counter_bot {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform: translate(30%, -50%);
+  color: #f3f5f9;
+  background-color: red;
+  border-radius: 50%;
+  border: 4px solid #f3f5f9;
+  padding: 7px 9px;
+  box-shadow: 1px 1px 1px #0069ff;
+}
+
+.help_bot_box button {
+  width: 65px;
+  height: 65px;
+  padding: 10px;
+  background-color: #0069ff;
+  background-image: url("../img/help_bot/sammy.png");
+  background-size: 98%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px #031b4e;
+  position: relative;
+  }
+
 /**************
  *   FOOTER   *
  **************/
@@ -706,6 +802,50 @@ input[type="radio"] {
 
 
 /* Media Query */
+@media screen and (max-width:991px) and (min-width:768px) {
+
+  .help_bot_box{
+    left: 60px;
+    bottom: -25px;
+  }
+
+  #sammy {
+    display: block;
+    bottom: 150px;
+    left: -10px;
+  }
+/* bubble orientation css */
+  .bubble {
+    right: 5%; 
+    z-index: 10;
+  }
+  .bubble:before,
+  .bubble:after  {
+    border-width: 0px 8px 8px 8px;
+  }
+
+  .bubble:before {
+    top: -7px;
+    left: 5%;
+    z-index: 12;
+  }
+  .bubble:after {
+    top: -8px;
+    left: 5%;
+    z-index: 11;
+  }
+
+  .out:before {
+    border-color: #ffffff transparent;
+  }
+
+  .out:after {
+    border-color: #031b4e transparent;
+  }
+/* bubble orientation css */
+
+}
+
 @media screen and (min-width: 1440px) {
 
   #sito_footer .setion_map:nth-child(odd) {
@@ -718,7 +858,8 @@ input[type="radio"] {
   }
 
   /* special style lg */
-  #sito_footer .splecial_lg {
+  #sito_footer .splecial_lg,
+  #sito_footer .footer_social {
     display: block;
   }
 }
@@ -755,6 +896,36 @@ input[type="radio"] {
   
 }
 
+@media screen and (max-width:1100px) {
+
+  #nav_top {
+    display: none;
+  }
+
+
+
+  #nav_menu_collapse {
+    display: none !important;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-fixed-top {
+    position: relative;
+  }
+
+  /* jumbotron */
+  .jumbotron {
+    margin-top: 0px;
+  }
+
+}
 
 @media screen and (min-width:991px) and (max-width:1023px) {
   div.scroll_box {
@@ -797,36 +968,7 @@ input[type="radio"] {
   }
 }
 
-@media screen and (max-width:1100px) {
 
-  #nav_top {
-    display: none;
-  }
-
-  
-
-  #nav_menu_collapse {
-    display: none !important;
-  }
-
-  .navbar-header {
-    float: none;
-  }
-
-  .navbar-toggle {
-    display: block;
-  }
-
-  .navbar-fixed-top {
-    position: relative;
-  }
-
-  /* jumbotron */
-  .jumbotron {
-    margin-top: 0px;
-  }
-
-}
 
 @media (max-width: 991px) {
 
@@ -857,6 +999,50 @@ input[type="radio"] {
     width: 70%;
     margin: 0 15%;
   }
+
+/* help_bot */
+  .help_bot_box {
+    left: 40px;
+  }
+
+  #sammy {
+    display: block;
+    bottom: 150px;
+    left: -10px;
+  }
+
+
+  .bubble {
+    right: 50%;
+    z-index: 10;
+  }
+
+  .bubble:before,
+  .bubble:after {
+    border-width: 0px 8px 8px 8px;
+  }
+
+  .bubble:before {
+    top: -7px;
+    left: 5%;
+    z-index: 12;
+  }
+
+  .bubble:after {
+    top: -8px;
+    left: 5%;
+    z-index: 11;
+  }
+
+  .out:before {
+    border-color: #ffffff transparent;
+  }
+
+  .out:after {
+    border-color: #031b4e transparent;
+  }
+
+  /* bubble orientation css */
 
 }
 
