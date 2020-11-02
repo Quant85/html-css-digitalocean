@@ -97,6 +97,10 @@ a::first-letter {
   margin-right: calc((100% / 12) / 2);
 }
 
+.my_20_10 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 .my_0 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -108,11 +112,14 @@ a::first-letter {
 .mt_0 {
   margin-top: 0;
 }
-.mt_64 {
-  margin-top: 64px;
-}
 .mt_20 {
   margin-top: 20px;
+}
+.mt_34 {
+  margin-top: 34px;
+}
+.mt_64 {
+  margin-top: 64px;
 }
 .mb_20 {
   margin-bottom: 20px;
@@ -458,16 +465,19 @@ a:hover {
   color: rgb(255, 255, 255);
 }
 
-
-#sito_header>div>div>div{
-  position: ;
-}
-
 /************
 *   MAIN    *
 *************/
 
 /* -- /#sito_main -- */
+#businesses_soluction h2 {
+  font-size: 14px;
+  font-family: 'Sailec-Bold','Helvetica', 'Arial', 'sans-serif';
+  line-height: 120%;
+  opacity: 1;
+  color: #5b6987
+}
+
 #businesses_soluction img {
   margin: auto;
 }
@@ -477,8 +487,8 @@ a:hover {
 
 #planning {
   align-items: center;
-  padding: 32px;
-  max-width: 940px;
+  padding: 32px 16px;
+  max-width: 1000px;
   border: 1px solid #e5e8ed;
   box-shadow: 0px 2px 4px rgba(1, 14, 40, 0.05);
   margin: 0 auto 64px auto;
@@ -488,7 +498,76 @@ a:hover {
   margin: auto;
 }
 
+#planning h3 {
+  font-family: 'Sailec-Bold','Helvetica','Arial','sans-serif';
+  font-size: 30px;
+  letter-spacing: -0.5px;
+  line-height: 120%;
+  margin: 30px 0 0 0;
+}
+
+#planning span {
+  font-family: 'Sailec', "system-ui", 'Roboto','Helvetica', Arial, "sans-serif";
+  color: #5b6987;
+  font-size: 16px;
+  line-height: 160%;
+  font-weight: 400;
+  font-style: normal;
+  margin: 8px 0 32px 0;
+}
+
+#planning button[type="button"] {
+  background-color: #006aff;
+  border-color: transparent;
+  color: #fff;
+  font-family: 'Sailec-Bold','Helvetica','san-serif';
+  font-size: 1em;
+  padding: 16px 30px 16px 30px;
+}
+
+#planning button[type="button"]:hover {
+  background-color: #1633ff;
+  transition: all 0.3s ease;
+}
+
+/* yx_menu */
+.yx_menu>li:first-of-type {
+  border-left: 2px solid rgb(3, 27, 78);
+}
+.yx_menu>li,
+.mobile_menu_yx {
+  height: 100%;
+  font-family: 'Sailec-Medium','Roboto','Helvetica','Arial','sans-serif';
+  padding: 8px 20px;
+  text-align: left;
+}
+
+.yx_menu>li {
+  border-left: 2px solid rgb(229, 232, 237);
+}
+
+.yx_menu>li>a {
+  color: rgba(3, 27, 78, 0.6);
+}
+.yx_menu>li:first-of-type>a {
+  color: rgb(3, 27, 78);
+}
+
+.mobile_menu_yx {
+  display: none; 
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  border-bottom: 2px solid rgb(229, 232, 237);
+}
+
+.mobile_menu_yx:first-of-type {
+  color: rgb(3, 27, 78);
+  border-bottom: 2px solid rgb(3, 27, 78);
+}
+
+
 /* #deploy */
+
 
 #deploy h2,
 #designed h2,
@@ -1133,6 +1212,39 @@ input[type="radio"] {
 
   .navbar-brand.desk_md {
     display: none;
+  }
+
+  .jumbotron,
+  .jumbotron .box_text{
+    padding-top: 0;
+  }
+
+  .jumbotron .box_text {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 5% 0 5%;
+  }
+
+  .jumbotron h1 {
+    font-size: 48px;
+  }
+
+  .deploy_menu {
+    margin-bottom: 34px;
+  }
+
+  .yx_menu {
+    display: none;;
+  }
+
+  .mobile_menu_yx {
+    display: inline-block;
+  }
+
+
+  .card_signup{
+    max-width: 76%;
+    margin: 50px 12% 0 12%;
   }
 
   #box_infotest {
