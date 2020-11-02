@@ -109,7 +109,7 @@
             <!-- navabar right buttons SignIn SignUp -->
             <ul class="nav navbar-nav navbar-right px_30">
               <li class="mr_15"><a class="btn btn-default text-capitalize" href="#" role="button">sign in</a></li>
-              <li class="mr_15"><a class="btn btn-default text-capitalize" href="#" role="button">sign un</a></li>
+              <li class="mr_15"><a class="btn btn-default text-capitalize" href="#" role="button">sign up</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </nav>
@@ -118,43 +118,52 @@
       <div class="jumbotron">
         <div class="container">
           <div class="row">
-            <div class="col-md-7 col-lg-7">
-              <div class="box_text">
-                <h1>Welcome to the developer cloud</h1>
-                <p class="white">We make it simple to launch in
-                  the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team
-                  accounts, and more.
-                </p>
-              </div>
+            <div class="box_text col-xs-12 col-sm-7 col-md-7 col-lg-7">
+              <h1>Welcome to the developer cloud</h1>
+              <p class="white">We make it simple to launch in
+                the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team
+                accounts, and more.
+              </p>
             </div>
-            <div class="card_signup col-md-5 col-lg-5 bg_white">
+            <div class="card_signup col-xs-12 col-sm-5 col-md-5 col-lg-5 pull-right">
               <!-- card_header -->
               <div class="card_header">
                 <h5 class="mt_0">
                   deploy in seconds
                 </h5>
-                <!-- /card_header -->
-
-                <!-- card_main -->
-                <div class="card_main">
-                  <form action="/action_page.php">
-                    <div class="form-group">
-                      <label for="email"></label>
-                      <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="form-group">
-                      <label for="pwd"></label>
-                      <input type="password" class="form-control" id="pwd">
-                    </div>
-                    <div class="checkbox">
-                      <label><input type="checkbox"></label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                  </form>
-
-                </div>
               </div>
-
+              <!-- /card_header -->
+              
+              <!-- card_main -->
+              <div class="card_main">
+                <form action="/action_page.php">
+                  <div class="form-group">
+                    <label for="name"></label>
+                    <input type="text" class="form-control" id="name" placeholder="First Name" minlength="3" required autocomplete="off">
+                    <input type="email" class="form-control" id="email" placeholder="Email Address"
+                      required autocomplete="off">
+                    <label for="pwd"></label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Password" required autocomplete="off" minlength="3" maxlength="16">
+                  </div>
+                  <button type="submit" class="text-capitalize btn btn-primary">sign up with email</button>
+                </form>
+              </div>
+              <div class="card_botton">
+                <div id="social_login" class="container">
+                  <div class="row">
+                    <button type="button" class="btn btn-default col-xs-9  col-sm-9 col-md-9 col-lg-9" id="google_log">
+                      <i class="fab fa-google"></i> Sign up with Google
+                    </button>
+                    <!-- /#google_log.col-lg-10 -->
+                    <button type="button" class="btn btn-default col-xs-2 col-sm-2 col-md-2 col-lg-2" id="github_log"><i
+                        class=" git_l fab fa-github"></i></button>
+                    <!-- /#github_log.col-lg-2 -->
+                  </div>
+                </div>
+                <!-- /.container social_login -->
+              </div>
+              <!-- /.card_botton -->
+              <p class="agree">by signing up you agree to the <a href="">Terms of Service</a></p>
             </div>
             <!-- /.card_signup -->
           </div>
@@ -175,32 +184,29 @@
           <h2>Innovative businesses trust DigitalOcean</h2>
 
           <div class="row col-lg-12">
-            <div class="row col-lg-6">
-              <div class="col-sm-12 col-md-4 col-lg-4">
+
+              <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                 <img src="./assets/img/main/businesses/docker-bab60eeb.svg" class="img-responsive" alt="Image">                
               </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
+              <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                 <img src="./assets/img/main/businesses/gitlab-166e2067.svg" class="img-responsive" alt="Image">
               </div>
-              <div class="col-sm-12 col-md-4 col-lg-4">
+              <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                 <img src="./assets/img/main/businesses/slack-e20293da.svg" class="img-responsive" alt="Image">
               </div>
-              <!-- /.col-sm-12 col-md-4 col-lg-4 -->
-            </div>
-            <!-- /.row -->
-            <div class="row col-lg-6">
-                <div class="col-sm-12 col-md-4 col-lg-4">
+              <!-- /.col-sm-6 col-md-4 col-lg-42-->
+
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                   <img src="./assets/img/main/businesses/hashicorp-4431df79.svg" class="img-responsive" alt="Image">
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                   <img src="./assets/img/main/businesses/wework-be6eab32.svg" class="img-responsive" alt="Image">
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
                   <img src="./assets/img/main/businesses/splunklogo.svg" class="img-responsive" alt="Image">
                 </div>
-              <!-- /.col-sm-12 col-md-4 col-lg-4 -->
-            </div>
-            <!-- /.row -->
+              <!-- /.col-sm-6 col-md-4 col-lg-2 -->
+
           </div>
           <a class="line_link" href="#">see business solutions</a>
           <!-- /.row -->
